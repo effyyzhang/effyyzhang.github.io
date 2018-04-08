@@ -7,22 +7,19 @@
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
+@import url("https://use.typekit.net/zoh7hph.css");
 
 
 body {
   color: #fff;
-  font-family:Apercu-Medium;
+  font-family:'Sofia Pro', sans-serif;
   font-size: 16px;
   text-align: center;
-  background-color: #FF3000;
+  background-color: #FFC1BD;
   margin: 0px;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-}
-
-.header {
-  height:120px;
 }
 
 .wrapper {
@@ -37,7 +34,7 @@ body {
 }
 
 h1 {
-  font-family:Apercu-Medium;
-  text-align: left;
-  color: #EC5946;
+  font-weight: 600;
+  text-align:left;
+  color: #ff3000;
 }
