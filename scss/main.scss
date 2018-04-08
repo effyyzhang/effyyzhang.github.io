@@ -1,0 +1,43 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+
+
+body {
+  color: #fff;
+  font-family:Apercu-Medium;
+  font-size: 16px;
+  text-align: center;
+  background-color: #FF3000;
+  margin: 0px;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  height:120px;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-family:Apercu-Medium;
+  text-align: left;
+  color: #EC5946;
+}

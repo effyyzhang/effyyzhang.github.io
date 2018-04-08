@@ -2,50 +2,61 @@
 <html lang="en">
 <head>
 	<title>Effy Zhang</title>
+	<meta name="description" content="Effy Zhang's Portfolio">
+	<meta name="author" content="Effy Zhang">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<style>
-		body {
-		  color: #fff;
-		  font-family: Monospace;
-		  font-size: 16px;
-		  text-align: center;
-		  background-color: #ffffff;
-		  margin: 0px;
-		  overflow: hidden;
-		}
-
-		h1{
-			font-family:Apercu-Medium;
-			font-size:42px;
-			text-align: left;
-			color: #EC5946;
-			/* color: #ffffff; */
-			padding-left: 200px;
-		}
-
-		#intro{
-			width: 800px;
-			index:100;
-			top:200px;
-			position: absolute;
-		}
-
-	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="scss/custom.scss">
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
+	<div id="bg-container"></div>
 
 
-	<div id="container"></div>
-	<div id="intro">
-		<h1>
-			Hi! I’m Effy. A digital product designer & creative technologist. I’m based in San Francisco, and currently designing products at Square to make commerce easier. I’m passionate about Digital Product
-	 </h1>
- </div>
- //bootstrap
+		<header class="header">
+		</header>
+
+<div class="wrapper">
+		<section class="container home" data-parallax="scroll">
+				<div class="row">
+						<div class="col-md-8 intro">
+								<h1>Hi! I’m Effy. A digital product designer & creative technologist.
+										I’m based in San Francisco, and currently designing products at Square to make commerce easier.
+										I’m passionate about Digital Product
+								</h1>
+								<u>
+										<a href="#about" class="smoothscroll btn btn--stroke">
+												Read the longer version
+										</a>
+								</u>
+						</div>
+						<ul class="col-md-4 list-unstyled home-social">
+								<li>
+										<a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+								</li>
+								<li>
+										<a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+								</li>
+								<li>
+										<a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+								</li>
+								<li>
+										<a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+								</li>
+						</ul>
+
+				</div> <!-- end home-content -->
+
+		</section> <!-- end s-home -->
+	</div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -95,7 +106,7 @@
 
 		function init() {
 
-			container = document.getElementById( 'container' );
+			container = document.getElementById( 'bg-container' );
 
 			// CAMERA
 
@@ -127,8 +138,8 @@
 
 			// MARCHING CUBES
 
-			resolution = 28;
-			numBlobs = 10;
+			resolution = 70;
+			numBlobs = 8;
 
 			effect = new THREE.MarchingCubes( resolution, materials[ current_material ].m, true, true );
 			effect.position.set( 0, 0, 0 );
@@ -291,7 +302,7 @@
 			material: "plastic",
 
 			speed: 0.4,
-			numBlobs:5,
+			numBlobs:7,
 			resolution: 70,
 			isolation: 40,
 
